@@ -11,7 +11,7 @@ const Details = () => {
     axios
     .get(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
     .then((res) => {
-        setName{res.data.name}
+        setName(res.data.name)
     })
   }, [])
     return (

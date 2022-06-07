@@ -10,7 +10,7 @@ const Item = ({ item, index, setList, list }) => {
   }
   return (
     <div className="item">
-        <h3 onClick={() => setIsChecked(!isChecked)} className={isChecked ? 'completed' : null}>{item.task}</h3>
+        <h3 onClick={() => setIsChecked(!isChecked)} className={isChecked ? 'completed' : null}>{item.task_name}</h3>
         <h5>{item.category}</h5>
         <h3 onClick={() => handleDelete(index)}>x</h3>
     </div>
